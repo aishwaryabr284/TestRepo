@@ -3,9 +3,7 @@ exports.ProductPageLocators = {
     logoutButton: '#logout_sidebar_link',
     aboutPageButton: '#about_sidebar_link',
     inventoryContainer: '[data-test="inventory-container"]',
-    inventoryItems: '[data-test="inventory-item"]',
-    //inventoryItems: '[.btn btn_secondary btn_small btn_inventory]',
-    
+    inventoryItems: '[data-test="inventory-item"]',    
     productNames: '[data-test="inventory-item-name"]',
     productDescriptions: '[data-test="inventory-item-desc"]',
     productPrices: '[data-test="inventory-item-price"]',
