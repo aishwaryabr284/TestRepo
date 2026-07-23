@@ -1,7 +1,7 @@
 exports.CheckoutDetails = {
     validCustomer: {
-        firstName: 'Rohit',
-        lastName: 'Sharma',
+        firstName: 'Shubhman',
+        lastName: 'Gill',
         postalCode: '600001'
     },
     missingPostalCodeCustomer: {
@@ -9,4 +9,6 @@ exports.CheckoutDetails = {
         lastName: 'Kohli',
         postalCode: ''
     }
+
+
 };
