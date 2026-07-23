@@ -9,6 +9,7 @@ exports.CartPage = class CartPage {
         return this.page.locator(CartPageLocators.cartItems).filter({ hasText: productName });
     }
 
+    // getCartItemAction Button
     getCartItemActionButton(productName) {
         return this.getCartItem(productName).getByRole('button');
     }
