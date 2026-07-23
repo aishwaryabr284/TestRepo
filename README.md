@@ -1,6 +1,15 @@
 # SauceDemo Playwright Project
 
-Scenario-based Playwright automation for SauceDemo using the Page Object Model.
+## Overview
+
+A Playwright Javascript automation framework for testing SauceDemo e-commerce workflows using Page Object Model, reusable locators,externalized test data, cross-browser execution and HTML reporting.
+
+## Tech stack
+
+-Javascript
+-Playwright test
+-Page Object Model
+-Github Actions
 
 ## Scenarios Covered
 
@@ -13,6 +22,23 @@ Scenario-based Playwright automation for SauceDemo using the Page Object Model.
 - Checkout validation and successful order completion
 - Menu actions like About and Logout
 
+## Project Structure
+
+```text
+test/SauceDempProject/
+|-- ClassFiles/
+|-- Locators/
+|-- TestData/
+|-- TestFiles/
+```
+
+## Installation
+
+```powershell
+nmp install
+nmx playwright install
+```
+
 ## Run
 
 ```powershell
@@ -20,3 +46,13 @@ npm test
 npm run test:headed
 npm run test:saucedemo
 ```
+
+## View Report
+
+```powershell
+npx playwright show-report
+```
+
+## Github Actions CI
+
+The repository includes '.github/workflows/playwright.yml' to run playwright tests automatically on push and pull requests to 'main' branch.The workflow installs dependencies, installs Playwright browsers, executes tests and uploads the HTML report as an artifact.
